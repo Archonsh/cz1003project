@@ -148,7 +148,7 @@ def lib_p_keyboard_select(n):
 # function parameter: coordinate of current location
 # function return: index of the nearest library
 def nearest_lib(x,y):
-	dis=0
+	dis=99999999
 	n=0
 	if (pow(x-1.347757,2)+pow(y-103.680900,2) < dis):
 		dis = pow(x-1.347757,2)+pow(y-103.680900,2)
@@ -202,7 +202,9 @@ def lib_close(chat_id):
 
 # ============= check vacancy ===============
 # in complete version of our project, here the function parameter should be selected area
-# but currently we have only 2 sets of data shared by all libraries, so we just put lib_name here
+# but currently we have only 2 sets of data grabbed from our own servers
+# so the data is shared by all libraries 
+# we just put lib_name here
 def lib_status(lib_name):
 	# set 50 as the number of available seats for both sets of data
 	seats = [50,50]

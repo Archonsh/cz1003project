@@ -27,13 +27,12 @@ async def on_chat_message(msg):
 			return
 
 	# ====== check the content type ======
-	# only when users ask for nearest lib, the content type will be 'lcoation'
+	# only when users ask for nearest lib, the content type will be 'location'
 	# otherwise, it will be 'text'
 	if content_type=='text':
 		# === after service selection ===
 		# select lib
 		if msg['text']=='Library Current Status Inquiry':
-			# await asyncio.sleep(10)
 			await bot.sendMessage(chat_id, 'Please Choose Your Library', reply_markup=lib_keyboard())
 
 		elif msg['text']=='Library Status Prediction':
@@ -118,7 +117,3 @@ loop.create_task(asyncio.wait(tasks))
 
 print ('Listening ...')
 loop.run_forever()
-
-
-
-# my id 121898056

@@ -52,7 +52,6 @@ def html():
 
         # timestamp for keeping track
         new_data = time.strftime("%m-%d,%H:%M:%S",time.localtime())+','
-    #print(time.strftime("%m-%d,%H:%M:%S",time.gmtime()),file=data,end=',')
 
         # loop to detemine where to insert , or newline
         for i in range(len(number)):
@@ -68,7 +67,7 @@ def html():
 
 # ========== function to extract data from database ==========
 def extract(n):
-    # === inicialization ===
+    # === initialization ===
     # return array init
     line = []
 
