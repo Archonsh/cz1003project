@@ -1,5 +1,5 @@
 # cz1003project
-**NTU Library Assistant**
+##NTU Library Assistant##
 
 **User Manual**
 
@@ -58,7 +58,7 @@ You should first open Python3 Shell and open file “cz1003bot.py”. Then
 click “Run” and choose “Run Module” to start the bot. You will be able
 to see the text “Listening ...” printed on the screen.
 
-**Chapter 3 Finding a Seat in the Library **
+**Chapter 3 Finding a Seat in the Library**
 
 **3.1 Whether the Libraries are Open**
 
