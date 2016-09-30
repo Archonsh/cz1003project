@@ -17,9 +17,9 @@ bot = telepot.Bot('194233496:AAFTNsUhxGYgb1ij84x0bys3Zhv3CNnE81w')
 def welcome_keyboard():
 	tmp=ReplyKeyboardMarkup(keyboard=
 	[
-	[KeyboardButton(text='Library Current Status Inquiry')],		# 1
+	[KeyboardButton(text='Library Current Status Inquiry')],
 
-	[KeyboardButton(text='Library Status Prediction')]			    # 2
+	[KeyboardButton(text='Library Status Prediction')]
 	],
 	one_time_keyboard=True
 	)
@@ -212,7 +212,7 @@ def lib_status(lib_name):
 
 	# calculate left available seats
 	empty = seats[lib_name]-num
-	
+
 	# return information to be sent
 	if empty < 10:
 		return 'There are only '+str(empty)+' seats available, quite crowded...'
