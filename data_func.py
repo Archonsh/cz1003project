@@ -15,7 +15,7 @@ def html():
     url = ['http://ipsmold.wicp.io:81/Network/ac_user',"http://103.244.103.154/Network/ac_user"]
 
     # username and password to be pass into the http POST method
-    payload = {'user':'temp','pass':'4&4+?rpw%akU!AKG'}
+    payload = {'user':'temp','pass':'**********'}
 
     # open a session to maintain the cookie and other information
     s = requests.Session()
